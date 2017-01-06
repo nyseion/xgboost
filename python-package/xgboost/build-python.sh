@@ -27,4 +27,5 @@ else
     echo "If you want multi-threaded version"
     echo "See additional instructions in doc/build.md"
 fi
+cp lib/libxgboost.so $oldpath/xgboost/libxgboost.so
 cd $oldpath
