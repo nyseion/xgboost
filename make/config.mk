@@ -17,15 +17,15 @@
 #----------------------------------------------------
 
 # choice of compiler, by default use system preference.
-# export CC = gcc
-# export CXX = g++
-# export MPICXX = mpicxx
+export CC = icc
+export CXX = icpc
+export MPICXX = mpiicpc
 
 # the additional link flags you want to add
-ADD_LDFLAGS =
+ADD_LDFLAGS = -lpthread -lm
 
 # the additional compile flags you want to add
-ADD_CFLAGS =
+ADD_CFLAGS = -xHost -ip
 
 # Whether enable openmp support, needed for multi-threading.
 USE_OPENMP = 1
